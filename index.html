@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    /> -->
+
+    <link rel="stylesheet" href="stylesheets/css/all.css" />
+  </head>
+
+  <body>
+    <div class="basic_wrap index_wrap">
+      <header class="header">
+        <div class="container">
+          <img src="images/index/logo.svg" alt="" />
+
+          <nav class="navbar">
+            <a href="">Kaya的待辦</a>
+            <a href="">登出</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="web_detail">
+        <div class="todo_content">
+          <div class="card input">
+            <input type="text" placeholder="請輸入待辦事項" class="inputText" />
+            <a href="#" class="addClick">+</a>
+          </div>
+
+          <div class="card card_list">
+            <ul class="tab">
+              <li class="active" data-tab="all">全部</li>
+              <li data-tab="ing">待完成</li>
+              <li data-tab="fin">已完成</li>
+            </ul>
+            <div class="cart_content">
+              <ul class="list">
+                <!-- <li>
+            <label class="checkbox" for="">
+              <input type="checkbox" />
+              <span>把冰箱發霉的檸檬拿去丟</span>
+            </label>
+            <a href="#" class="delete"></a>
+          </li>
+          <li>
+            <label class="checkbox" for="">
+              <input type="checkbox" />
+              <span>把冰箱發霉的檸檬拿去丟</span>
+            </label>
+            <a href="#" class="delete"></a>
+          </li> -->
+              </ul>
+              <div class="list_footer">
+                <p><span class="ingNum">0</span> 個待完成項目</p>
+                <a href="#" class="clearFin">清除已完成項目</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/all.js"></script>
+  </body>
+</html>

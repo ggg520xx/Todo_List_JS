@@ -1,0 +1,75 @@
+// 我個人的基本頁面設定
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  // @import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+  line-height: 1.5;
+
+  overflow-x: hidden !important;
+  overflow-y: auto;
+  // 預料之外的x軸 很麻煩直接隱藏吧
+
+  // 以下是設計稿增加的
+  min-height: 100vh;
+  background: #eee;
+  display: flex;
+  color: $kuro;
+  background-image: linear-gradient(
+   170deg,
+    $main_color 0%,
+    $main_color 50%,
+    $shiro 60%,
+    $shiro 80%,
+    $main_color 100%
+
+
+  );
+
+  // background: linear-gradient(
+  //   350deg,
+  //   white 0%,
+  //   white 50%,
+  //   $yellow 50%,
+  //   $yellow 100%
+  // );
+
+  letter-spacing: 0.07em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+sub {
+  vertical-align: sub;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding-left: 16px;
+  padding-right: 16px; */
+}
+
+/* .fa {
+  font-weight: 900;
+  font-size: x-large !important;
+} */
+
+/* ------------------------------------------------------------------- */
+/* base setting by me */

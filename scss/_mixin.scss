@@ -1,0 +1,52 @@
+@mixin layout_fix {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+
+
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+
+// @include layout_fix {
+//   width: 50%;
+// }
+// @include pad {
+//   width: 50%;
+// }
+// @include mobile {
+//   width: 100%;
+// }
+
+// ------------------------
+
+
+// ---------------- 搭配使用 (include帶入參數)
+
+@mixin backdrop($position, $repeat, $size) {
+  // 背景
+  $backdrop-array: (
+    position: $position,
+    repeat: $repeat,
+    size: $size,
+  );
+  @each $name, $item in $backdrop-array {
+    background-#{$name}: #{$item};
+  }
+}
+// @include backdrop(center, no-repeat, cover);
+
+// background-position: center;
+// background-repeat: no-repeat;
+// background-size: cover;

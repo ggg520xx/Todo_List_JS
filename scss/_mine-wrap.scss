@@ -1,0 +1,100 @@
+// 以前習慣 避免各頁有特殊頁面排版需求或差異 用wrap做包裹調整
+
+// 寫給自己看的
+// max-heigh 100vh  和 max-width 100vw 相當難控制 且沒用的寫法
+// 寫100% 還可以靠已有框去限制 , 而vh vw 幾乎是超出視窗及框架控制
+
+// 只可寫heigh 100vh及width 100vw  且一個板頁面中只使用一次
+// 只能寫一次在wrap(用於body下 我用來包裹全部元素的最外層)
+// 除了wrap外 任何地方皆不可寫vh 及 vw
+
+// wrap 在此scss控制,,  其餘位置 scss 看到 vh 及 vw 皆替換成 %
+
+// ------------------------------------------------
+.basic_wrap {
+  overflow-x: hidden;
+  overflow-y: auto;
+  // 透過以上語法設定，隱藏了 x 軸的卷軸，同時讓 y 軸的卷軸自動延伸，這樣就完成囉！
+  // 預料之外的x軸 很麻煩直接隱藏吧
+
+  
+  // .web_detail {
+    //不包括 header 及 footer   只可用於網頁內容項目 且受wrap框架之下
+    // min-height: 100vh; // 造成沒什麼東西 卻還有滾輪上下的原因
+    // border: 1px solid red;
+
+    // padding-bottom: 3rem;
+    // width: 500px;
+    // margin-top: $computer_header;
+    // @media (max-width: $header_max) {
+    //   margin-top: $phone_header;
+    // } 
+  // CSS的 background 引不進頁面 偶然刪掉這個web_detail 就出現了= =?
+  // }
+}
+// ------------------------------------------------
+// 下面的wrap式對於該頁除了header及footer的內容調整版面 然後該版的控制都寫在該版wrap下
+// 也比較好搜尋到
+
+.index_wrap {
+
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  // padding-top: 30px;
+}
+
+.dessert_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  // padding-top: 30px;
+}
+
+.login_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  // padding-top: 30px;
+}
+
+.cart_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  // padding-top: 30px;
+}
+
+.delivery_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  // padding-top: 30px;
+}
+
+.payment_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  // padding-top: 30px;
+}
+.receipt_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  // padding-top: 30px;
+}
+
+.finish_wrap {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+  // padding-top: 30px;
+}
